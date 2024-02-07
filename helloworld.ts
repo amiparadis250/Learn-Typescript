@@ -1,15 +1,10 @@
-function CheckOdd(num: number): string {
-    if (num % 2 === 0) {
-        return "even";
-    } else {
-        return "odd";
+function Reverse(str: string): string{
+    let newString:string ="";
+    for(let i= str.length-1 ; i>=0 ; i--){
+        newString+= str[i];
     }
+    return `The reversse of ${str} is ${newString}`;
 }
+let text = 'ISHIMWE Ami Paradis';
 
-let marks = 45;
-
-console.log(CheckOdd(marks));
-
-for (let i = 0; i <= marks; i++) {
-    console.log(CheckOdd(i));
-}
+console.log(Reverse(text));
